@@ -1,0 +1,26 @@
+import random
+
+number = random.randint(1,10)
+
+number_of_Guesses = 0
+
+while number_of_Guesses < 5:
+    print('please make a guess between 1 and 10: ')
+    guess= input()
+    guess = int(guess)
+    number_of_Guesses + 1
+
+
+    if guess > number:
+        print('your guess is too high.')
+
+    if guess < number:
+        print('your guess it too low.')
+
+    if guess == number:
+        print('you got the correct number!')
+        break
+
+
+print('it took you ' + str(number_of_Guesses) + ' tries to get the correct number')
+
