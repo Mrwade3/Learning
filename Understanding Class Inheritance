@@ -1,0 +1,21 @@
+class fish:
+    def type(self):
+        print('this is a type of fish.')
+
+
+class color:
+    def colors(self):
+        print('this is the color of the fish')
+
+
+
+
+class fishes(fish,color):
+    pass
+    
+
+wish = fishes()
+
+
+wish.colors()
+wish.type()
